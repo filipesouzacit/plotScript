@@ -49,7 +49,8 @@ if __name__ == '__main__':
         resultsLog = []
         maxLen = 0
         for f in files:
-            r = np.genfromtxt(f, delimiter=';')[:-1]
+            with open(f, 'r') as reader:
+                r = [int(v) for v in reader.read().split(';')[:-1]]
             results.append(r)
             resultsLog.append(np.log(r))
             if maxLen < len(r):
