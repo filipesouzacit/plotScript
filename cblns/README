@@ -1,0 +1,8 @@
+These are the sources of the solver that was submitted to RAODEF'2012 for solving instances of machine reassignment problem. 
+Most of the parameters are hard-coded. In future I will try to produce a clean version with more parameterizable options.
+
+
+To compile run 'make roadef' and use the command line options as described on the page: http://challenge.roadef.org/2012/en/reponse.php .  
+If you want to see the progress while solving the problem then additionally use '-log onscreen'. 
+ 
+Deepak Mehta (d.mehta@4c.ucc.ie), June 2012.
