@@ -1,18 +1,3 @@
 #!/bin/bash
-python3 createPlotLines.py  062
-python3 createPlotLines.py  063
-python3 createPlotLines.py  064
-python3 createPlotLines.py  065
-python3 createPlotLines.py  066
-python3 createPlotLines.py  067
-python3 createPlotLines.py  068
-python3 createPlotLines.py  069
-python3 createPlotLines.py  070
-python3 createPlotLines.py  071
+python3 createPlotLines.py  038
 python3 createPlotLines.py  072
-python3 createPlotLines.py  073
-python3 createPlotLines.py  074
-python3 createPlotLines.py  075
-python3 createPlotLines.py  076
-python3 createPlotLines.py  077
-python3 createPlotLines.py  078

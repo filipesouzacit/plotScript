@@ -30,9 +30,7 @@ if __name__ == '__main__':
     
     
     for i in inst:
-        outFile_log = '../data/plot/'+ testId + '/plot_'+ i + '_log.png'
-        outFile = '../data/plot/'+ testId + '/plot_'+ i + '.png'
-        
+        outFile = '../data/plot/'+ testId + '/plot_'+ i + '.png'        
         files = glob.glob('../solution/'+testId+'/dataPlot_*.'+i+'.*')
 
         results = []
@@ -41,7 +39,6 @@ if __name__ == '__main__':
             with open(f, 'r') as reader:
                 r = [int(v) for v in reader.read().split(';')[:-1]]
             results.append(r)
-            resultsLog.append(np.log(r))
                 
         # plot 2
         plt.figure()
@@ -50,17 +47,9 @@ if __name__ == '__main__':
         plt.title('Cost Vs Iteration')
         plt.xlabel('Iteration')
         plt.ylabel('Cost')
+        plt.yscale("log")
         plt.savefig(outFile, bbox_inches='tight')
         plt.close()
         
-        # plot 4
-        plt.figure()
-        for r in resultsLog:
-            plt.plot([x for x in range(len(r))],r)
-        plt.title('Cost Vs Iteration')
-        plt.xlabel('Iteration')
-        plt.ylabel('Log(Cost)')
-        plt.savefig(outFile_log, bbox_inches='tight')
-        plt.close()
         
         
